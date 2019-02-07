@@ -1,3 +1,6 @@
+const express = require("express");
+const router = express.Router();
+
 // Item Model
 const Todo = require("../../models/Todo");
 
@@ -9,3 +12,5 @@ router.get("/", (req, res) => {
     .sort({ date: -1 })
     .then(todo => res.json(todo));
 });
+
+module.exports = router;
