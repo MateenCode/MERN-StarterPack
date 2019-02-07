@@ -12,13 +12,16 @@ const app = express();
 app.use(bodyParser.json());
 
 // DB Config
-const db = require("./config/keys").mongoURI;
+// const db = require("./config/keys").mongoURI;
 
 // Connect to Mongo
-mongoose
-  .connect(db, { useNewUrlParser: true }) // Adding new mongo url parser
-  .then(() => console.log("MongoDB Connected..."))
-  .catch(err => console.log(err));
+// mongoose
+//   .connect(
+//     db,
+//     { useNewUrlParser: true }
+//   ) // Adding new mongo url parser
+//   .then(() => console.log("MongoDB Connected..."))
+//   .catch(err => console.log(err));
 
 // Use Routes
 // app.use("/api/", );
